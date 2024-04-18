@@ -6,6 +6,9 @@
 @import "educationsInfo";
 @import "about-us";
 @import "topEducations";
+@import "contact";
+@import "footer";
+
 // Resetleme yapıldı
 * {
   margin: 0;
@@ -47,5 +50,33 @@ body {
     border: 2px solid var(--text-color);
     background-color: transparent;
     color: var(--text-color);
+  }
+}
+// Responsive Tasarım
+@media (max-width: 1220px) {
+  .navbar li {
+    display: none;
+  }
+  .home {
+    .home-text {
+      h5 {
+        font-size: 2rem;
+      }
+      h1 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 1rem;
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .header-right a {
+    display: none;
+  }
+  .header-right a:first-child {
+    display: block;
   }
 }
